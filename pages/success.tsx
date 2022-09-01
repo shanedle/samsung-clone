@@ -171,7 +171,7 @@ export default function Success({ products }: Props) {
                         <div className="relative h-7 w-7 rounded-md">
                           <ShoppingCartIcon />
                         </div>
-                        <div className="absolute -right-2 -top-2 flex h-5 w-5 items-center justify-center rounded-full bg-gray-300 text-xs">
+                        <div className="absolute -right-2 -top-2 flex h-5 w-5 items-center justify-center rounded-full bg-red-700 text-xs text-white">
                           {product.quantity}
                         </div>
                       </div>
