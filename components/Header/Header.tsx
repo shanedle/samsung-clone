@@ -9,7 +9,7 @@ import {
 } from "@heroicons/react/outline";
 import { useSelector } from "react-redux";
 
-import { selectCartItems } from "../redux/cartSlice";
+import { selectCartItems } from "../../redux/cartSlice";
 
 export default function Header() {
   const { data: session } = useSession();

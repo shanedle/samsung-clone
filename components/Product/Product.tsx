@@ -3,11 +3,11 @@ import React from "react";
 import toast from "react-hot-toast";
 import { useDispatch } from "react-redux";
 
-import Button from "./Button";
+import Button from "../Button";
 
-import { addToCart } from "../redux/cartSlice";
+import { addToCart } from "../../redux/cartSlice";
 
-import { urlFor } from "../sanity";
+import { urlFor } from "../../sanity";
 
 interface Props {
   product: Product;

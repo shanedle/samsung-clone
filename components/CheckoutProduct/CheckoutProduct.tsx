@@ -3,9 +3,9 @@ import Currency from "react-currency-formatter";
 import toast from "react-hot-toast";
 import { useDispatch } from "react-redux";
 
-import { removeFromCart } from "../redux/cartSlice";
+import { removeFromCart } from "../../redux/cartSlice";
 
-import { urlFor } from "../sanity";
+import { urlFor } from "../../sanity";
 
 interface Props {
   items: Product[];
