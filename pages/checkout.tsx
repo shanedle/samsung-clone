@@ -57,7 +57,7 @@ export default function Checkout() {
   };
 
   return (
-    <div className="min-h-screen overflow-hidden bg-[#fff]">
+    <div className="min-h-screen overflow-hidden">
       <Head>
         <title>Samsung Checkout</title>
         <link rel="icon" href="/favicon.ico" />

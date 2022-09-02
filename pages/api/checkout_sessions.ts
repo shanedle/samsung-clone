@@ -43,7 +43,7 @@ export default async function handler(
       res.status(200).json(checkoutSession);
     } catch (err) {
       const errorMessage =
-        err instanceof Error ? err.message : "Internal server error";
+        err instanceof Error ? err.message : "Internal server error!";
       res.status(500).json({ statusCode: 500, message: errorMessage });
     }
   } else {

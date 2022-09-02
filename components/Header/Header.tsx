@@ -16,7 +16,7 @@ export default function Header() {
   const items = useSelector(selectCartItems);
 
   return (
-    <header className="top-0 z-30 flex w-full items-center justify-between bg-[#fff] p-4">
+    <header className="top-0 z-30 flex w-full items-center justify-between p-4">
       <div className="flex items-center justify-center md:w-1/5">
         <Link href="/">
           <div className="logo-icon flex cursor-pointer items-center justify-center">
@@ -42,17 +42,17 @@ export default function Header() {
         </Link>
       </div>
       <div className="hidden flex-1 items-center justify-center space-x-2 font-medium md:flex">
-        <a className="headerLink">Mobile</a>
-        <a className="headerLink">TV & Audio</a>
-        <a className="headerLink">Appliances</a>
-        <a className="headerLink">Computing</a>
-        <a className="headerLink">Displays</a>
-        <a className="headerLink">#YouMake</a>
-        <a className="headerLink">Gift ideas</a>
-        <a className="headerLink">Offers</a>
+        <a className="header-link">Mobile</a>
+        <a className="header-link">TV & Audio</a>
+        <a className="header-link">Appliances</a>
+        <a className="header-link">Computing</a>
+        <a className="header-link">Displays</a>
+        <a className="header-link">#YouMake</a>
+        <a className="header-link">Gift ideas</a>
+        <a className="header-link">Offers</a>
       </div>
       <div className="flex items-center justify-center gap-x-8 md:w-1/5">
-        <SearchIcon className="headerIcon" />
+        <SearchIcon className="header-icon" />
         <Link href="/checkout">
           <div className="relative cursor-pointer">
             {items.length > 0 && (
@@ -60,7 +60,7 @@ export default function Header() {
                 {items.length}
               </span>
             )}
-            <ShoppingCartIcon className="headerIcon" />
+            <ShoppingCartIcon className="header-icon" />
           </div>
         </Link>
 
@@ -77,7 +77,7 @@ export default function Header() {
             onClick={() => signOut()}
           />
         ) : (
-          <UserIcon className="headerIcon" onClick={() => signIn()} />
+          <UserIcon className="header-icon" onClick={() => signIn()} />
         )}
       </div>
     </header>

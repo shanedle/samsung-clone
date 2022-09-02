@@ -36,40 +36,41 @@ export default function Home({ categories, products }: Props) {
 
       <Cart />
 
-      <main className="relative h-[200vh] bg-[#fff]">
+      <main>
         <Landing />
-      </main>
-      <section className="min-h-screen] relative z-40 -mt-[100vh]">
-        <div className="space-y-10 py-16">
-          <h1 className="text-center text-4xl font-medium tracking-wide text-black md:text-5xl">
-            Shop our latest offers and innovations
-          </h1>
 
-          <Tab.Group>
-            <Tab.List className="flex justify-center">
-              {categories.map((category) => (
-                <Tab
-                  key={category._id}
-                  id={category._id}
-                  className={({ selected }) =>
-                    ` whitespace-nowrap px-5 text-[18px] font-medium md:px-6 ${
-                      selected ? "underline decoration-2" : ""
-                    }`
-                  }
-                >
-                  {category.title}
-                </Tab>
-              ))}
-            </Tab.List>
-            <Tab.Panels className="mx-auto max-w-fit pb-24 sm:px-4">
-              <Tab.Panel className="tabPanel">{showProducts(0)}</Tab.Panel>
-              <Tab.Panel className="tabPanel">{showProducts(1)}</Tab.Panel>
-              <Tab.Panel className="tabPanel">{showProducts(2)}</Tab.Panel>
-              <Tab.Panel className="tabPanel">{showProducts(3)}</Tab.Panel>
-            </Tab.Panels>
-          </Tab.Group>
-        </div>
-      </section>
+        <section className="min-h-screen">
+          <div className="space-y-10 py-16">
+            <h1 className="text-center text-4xl font-medium tracking-wide text-black md:text-5xl">
+              Shop our latest offers and innovations
+            </h1>
+
+            <Tab.Group>
+              <Tab.List className="flex justify-center">
+                {categories.map((category) => (
+                  <Tab
+                    key={category._id}
+                    id={category._id}
+                    className={({ selected }) =>
+                      ` whitespace-nowrap px-5 text-[18px] font-medium md:px-6 ${
+                        selected ? "underline decoration-2" : ""
+                      }`
+                    }
+                  >
+                    {category.title}
+                  </Tab>
+                ))}
+              </Tab.List>
+              <Tab.Panels className="mx-auto max-w-fit pb-24 sm:px-4">
+                <Tab.Panel className="tab-panel">{showProducts(0)}</Tab.Panel>
+                <Tab.Panel className="tab-panel">{showProducts(1)}</Tab.Panel>
+                <Tab.Panel className="tab-panel">{showProducts(2)}</Tab.Panel>
+                <Tab.Panel className="tab-panel">{showProducts(3)}</Tab.Panel>
+              </Tab.Panels>
+            </Tab.Group>
+          </div>
+        </section>
+      </main>
     </div>
   );
 }
