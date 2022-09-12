@@ -4,10 +4,10 @@ import type { Session } from "next-auth";
 import { getSession } from "next-auth/react";
 import { Tab } from "@headlessui/react";
 
-import Cart from "../components/Cart";
 import Header from "../components/Header";
 import Landing from "../components/Landing";
 import Product from "../components/Product";
+import ScrollToTop from "../components/ScrollToTop";
 
 import { fetchCategories } from "../utils/fetchCategories";
 import { fetchProducts } from "../utils/fetchProducts";
@@ -34,9 +34,9 @@ export default function Home({ categories, products }: Props) {
 
       <Header />
 
-      <Cart />
-
       <Landing />
+
+      <ScrollToTop />
 
       <section className="relative min-h-screen">
         <div className="space-y-10 py-16">
