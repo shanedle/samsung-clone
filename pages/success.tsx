@@ -137,7 +137,7 @@ export default function Success({ products }: Props) {
           <div className="mx-4 flex flex-col items-center justify-between text-sm lg:ml-14 lg:flex-row">
             {mounted && (
               <Button
-                title="Continue Shopping"
+                title="CONTINUE SHOPPING"
                 onClick={() => router.push("/")}
                 width={isTabletOrMobile ? "w-full" : undefined}
                 padding="py-4"
