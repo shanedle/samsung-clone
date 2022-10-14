@@ -5,9 +5,9 @@ import { useDispatch } from "react-redux";
 
 import { XIcon } from "@heroicons/react/outline";
 
-import { removeFromCart } from "../../redux/cartSlice";
+import { removeFromCart } from "@/store/cartSlice";
 
-import { urlFor } from "../../sanity";
+import { urlFor } from "@/lib/sanity";
 
 interface Props {
   items: Product[];

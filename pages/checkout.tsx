@@ -5,14 +5,14 @@ import { useSelector } from "react-redux";
 import Currency from "react-currency-formatter";
 import Stripe from "stripe";
 
-import { selectCartItems, selectCartTotal } from "../redux/cartSlice";
+import { selectCartItems, selectCartTotal } from "@/store/cartSlice";
 
-import Button from "../components/Button";
-import Header from "../components/Header";
-import CheckoutProduct from "../components/CheckoutProduct";
+import Button from "@/components/Button";
+import Header from "@/components/Header";
+import CheckoutProduct from "@/components/CheckoutProduct";
 
-import { fetchPostJSON } from "../utils/api-helpers";
-import getStripe from "../utils/get-stripejs";
+import { fetchPostJSON } from "@/utils/api-helpers";
+import getStripe from "@/utils/get-stripejs";
 
 export default function Checkout() {
   const items = useSelector(selectCartItems);
