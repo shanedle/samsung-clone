@@ -4,13 +4,13 @@ import type { Session } from "next-auth";
 import { getSession } from "next-auth/react";
 import { Tab } from "@headlessui/react";
 
-import Header from "../components/Header";
-import Landing from "../components/Landing";
-import Product from "../components/Product";
-import ScrollToTop from "../components/ScrollToTop";
+import Header from "@/components/Header";
+import Landing from "@/components/Landing";
+import Product from "@/components/Product";
+import ScrollToTop from "@/components/ScrollToTop";
 
-import { fetchCategories } from "../utils/fetchCategories";
-import { fetchProducts } from "../utils/fetchProducts";
+import { fetchCategories } from "@/utils/fetchCategories";
+import { fetchProducts } from "@/utils/fetchProducts";
 
 interface Props {
   categories: Category[];

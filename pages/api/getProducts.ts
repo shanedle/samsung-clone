@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { groq } from "next-sanity";
 
-import { sanityClient } from "../../sanity";
+import { sanityClient } from "@/lib/sanity";
 
 const query = groq`*[_type == "product"] {
 _id,

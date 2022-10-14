@@ -13,9 +13,9 @@ import {
   ShoppingCartIcon,
 } from "@heroicons/react/outline";
 
-import Button from "../components/Button";
+import Button from "@/components/Button";
 
-import { fetchLineItems } from "../utils/fetchLineItems";
+import { fetchLineItems } from "@/utils/fetchLineItems";
 
 interface Props {
   products: StripeProduct[];
