@@ -1,3 +1,4 @@
+import { FC } from "react";
 import Image from "next/image";
 import Currency from "react-currency-formatter";
 import toast from "react-hot-toast";
@@ -14,7 +15,7 @@ interface Props {
   id: string;
 }
 
-export default function CheckoutProduct({ id, items }: Props) {
+const CheckoutProduct: FC<Props> = ({ id, items }) => {
   const dispatch = useDispatch();
 
   const removeItemFromCart = () => {
@@ -63,4 +64,6 @@ export default function CheckoutProduct({ id, items }: Props) {
       </div>
     </>
   );
-}
+};
+
+export default CheckoutProduct;

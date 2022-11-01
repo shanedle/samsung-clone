@@ -1,5 +1,5 @@
+import { FC } from "react";
 import Image from "next/image";
-import React from "react";
 import toast from "react-hot-toast";
 import { useDispatch } from "react-redux";
 
@@ -13,7 +13,7 @@ interface Props {
   product: Product;
 }
 
-export default function Product({ product }: Props) {
+const Product: FC<Props> = ({ product }) => {
   const dispatch = useDispatch();
 
   const addItemToCart = () => {
@@ -45,4 +45,6 @@ export default function Product({ product }: Props) {
       </div>
     </div>
   );
-}
+};
+
+export default Product;

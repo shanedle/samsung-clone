@@ -1,9 +1,10 @@
+import { FC } from "react";
 import Image from "next/image";
 import React from "react";
 
 import Button from "@/components/Button";
 
-export default function Landing() {
+const Landing: FC = () => {
   return (
     <section className="mx-auto flex h-screen max-w-[1350px] items-center justify-between px-8">
       <div className="space-y-12">
@@ -27,4 +28,6 @@ export default function Landing() {
       </div>
     </section>
   );
-}
+};
+
+export default Landing;

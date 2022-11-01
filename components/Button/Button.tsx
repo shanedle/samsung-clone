@@ -1,3 +1,5 @@
+import { FC } from "react";
+
 interface Props {
   title: string;
   onClick?: () => void;
@@ -6,13 +8,7 @@ interface Props {
   padding?: string;
 }
 
-export default function Button({
-  title,
-  onClick,
-  width,
-  loading,
-  padding,
-}: Props) {
+const Button: FC<Props> = ({ title, onClick, width, loading, padding }) => {
   return (
     <button
       className={`ease group relative z-30 box-border inline-flex ${
@@ -25,4 +21,6 @@ export default function Button({
       </span>
     </button>
   );
-}
+};
+
+export default Button;
