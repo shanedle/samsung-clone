@@ -1,4 +1,3 @@
-import { FC } from "react";
 import Image from "next/image";
 import toast from "react-hot-toast";
 import { useDispatch } from "react-redux";
@@ -9,11 +8,11 @@ import { addToCart } from "@/store/cartSlice";
 
 import { urlFor } from "@/lib/sanity";
 
-interface Props {
+interface ProductProps {
   product: Product;
 }
 
-const Product: FC<Props> = ({ product }) => {
+export default function Product({ product }: ProductProps) {
   const dispatch = useDispatch();
 
   const addItemToCart = () => {
@@ -45,6 +44,4 @@ const Product: FC<Props> = ({ product }) => {
       </div>
     </div>
   );
-};
-
-export default Product;
+}

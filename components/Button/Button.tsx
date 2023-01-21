@@ -1,14 +1,12 @@
-import { FC } from "react";
+import { Button as ButtonProps } from "@/interfaces/button.interface";
 
-interface Props {
-  title: string;
-  onClick?: () => void;
-  width?: string;
-  loading?: boolean;
-  padding?: string;
-}
-
-const Button: FC<Props> = ({ title, onClick, width, loading, padding }) => {
+export default function Button({
+  title,
+  onClick,
+  width,
+  loading,
+  padding,
+}: ButtonProps) {
   return (
     <button
       className={`ease group relative z-30 box-border inline-flex ${
@@ -21,6 +19,4 @@ const Button: FC<Props> = ({ title, onClick, width, loading, padding }) => {
       </span>
     </button>
   );
-};
-
-export default Button;
+}

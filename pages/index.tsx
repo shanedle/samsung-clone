@@ -1,6 +1,5 @@
 import type { GetServerSideProps } from "next";
 import Head from "next/head";
-import type { Session } from "next-auth";
 import { getSession } from "next-auth/react";
 import { Tab } from "@headlessui/react";
 
@@ -9,16 +8,12 @@ import Landing from "@/components/Landing";
 import Product from "@/components/Product";
 import ScrollToTop from "@/components/ScrollToTop";
 
+import { Home as HomeProps } from "@/interfaces/home.interface";
+
 import { fetchCategories } from "@/utils/fetchCategories";
 import { fetchProducts } from "@/utils/fetchProducts";
 
-interface Props {
-  categories: Category[];
-  products: Product[];
-  session: Session | null;
-}
-
-export default function Home({ categories, products }: Props) {
+export default function Home({ categories, products }: HomeProps) {
   const showProducts = (category: number) => {
     return products
       .filter((product) => product.category._ref === categories[category]._id)
@@ -74,7 +69,7 @@ export default function Home({ categories, products }: Props) {
 }
 
 // Backend
-export const getServerSideProps: GetServerSideProps<Props> = async (
+export const getServerSideProps: GetServerSideProps<HomeProps> = async (
   context
 ) => {
   const categories = await fetchCategories();

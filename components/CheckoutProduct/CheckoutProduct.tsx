@@ -1,4 +1,3 @@
-import { FC } from "react";
 import Image from "next/image";
 import Currency from "react-currency-formatter";
 import toast from "react-hot-toast";
@@ -6,16 +5,13 @@ import { useDispatch } from "react-redux";
 
 import { XIcon } from "@heroicons/react/outline";
 
+import { CheckoutProduct as CheckoutProductProps } from "@/interfaces/checkoutproduct.interface";
+
 import { removeFromCart } from "@/store/cartSlice";
 
 import { urlFor } from "@/lib/sanity";
 
-interface Props {
-  items: Product[];
-  id: string;
-}
-
-const CheckoutProduct: FC<Props> = ({ id, items }) => {
+export default function CheckoutProduct({ id, items }: CheckoutProductProps) {
   const dispatch = useDispatch();
 
   const removeItemFromCart = () => {
@@ -64,6 +60,4 @@ const CheckoutProduct: FC<Props> = ({ id, items }) => {
       </div>
     </>
   );
-};
-
-export default CheckoutProduct;
+}

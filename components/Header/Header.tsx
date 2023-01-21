@@ -1,4 +1,3 @@
-import { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { signIn, signOut, useSession } from "next-auth/react";
@@ -13,7 +12,7 @@ import { useSelector } from "react-redux";
 
 import { selectCartItems } from "@/store/cartSlice";
 
-const Header: FC = () => {
+export default function Header() {
   const { data: session } = useSession();
 
   const items = useSelector(selectCartItems);
@@ -112,6 +111,4 @@ const Header: FC = () => {
       </div>
     </header>
   );
-};
-
-export default Header;
+}

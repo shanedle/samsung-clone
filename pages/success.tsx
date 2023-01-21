@@ -15,13 +15,11 @@ import {
 
 import Button from "@/components/Button";
 
+import { Success as SuccessProps } from "@/interfaces/success.interface";
+
 import { fetchLineItems } from "@/utils/fetchLineItems";
 
-interface Props {
-  products: StripeProduct[];
-}
-
-export default function Success({ products }: Props) {
+export default function Success({ products }: SuccessProps) {
   const router = useRouter();
   const { session_id } = router.query;
 
@@ -230,7 +228,7 @@ export default function Success({ products }: Props) {
   );
 }
 
-export const getServerSideProps: GetServerSideProps<Props> = async ({
+export const getServerSideProps: GetServerSideProps<SuccessProps> = async ({
   query,
 }) => {
   const sessionId = query.session_id as string;

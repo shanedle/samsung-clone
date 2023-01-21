@@ -1,7 +1,7 @@
-import { FC, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { ArrowUpIcon } from "@heroicons/react/outline";
 
-const ScrollToTop: FC = () => {
+export default function ScrollToTop() {
   const [showTopBtn, setShowTopBtn] = useState(false);
 
   useEffect(() => {
@@ -32,6 +32,4 @@ const ScrollToTop: FC = () => {
       )}
     </>
   );
-};
-
-export default ScrollToTop;
+}
