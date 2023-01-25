@@ -8,7 +8,7 @@ import Landing from "@/components/Landing";
 import Product from "@/components/Product";
 import ScrollToTop from "@/components/ScrollToTop";
 
-import { Home as HomeProps } from "@/interfaces/home.interface";
+import { Home as HomeProps } from "@/types/interfaces/home.interface";
 
 import { fetchCategories } from "@/utils/fetchCategories";
 import { fetchProducts } from "@/utils/fetchProducts";

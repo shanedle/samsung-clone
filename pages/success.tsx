@@ -15,7 +15,7 @@ import {
 
 import Button from "@/components/Button";
 
-import { Success as SuccessProps } from "@/interfaces/success.interface";
+import { Success as SuccessProps } from "@/types/interfaces/success.interface";
 
 import { fetchLineItems } from "@/utils/fetchLineItems";
 

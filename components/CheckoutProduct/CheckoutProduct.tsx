@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux";
 
 import { XIcon } from "@heroicons/react/outline";
 
-import { CheckoutProduct as CheckoutProductProps } from "@/interfaces/checkoutproduct.interface";
+import { CheckoutProduct as CheckoutProductProps } from "@/types/interfaces/checkoutproduct.interface";
 
 import { removeFromCart } from "@/store/cartSlice";
 
