@@ -20,8 +20,7 @@
       "@/lib/*": ["lib/*"],
       "@/store/*": ["store/*"],
       "@/styles/*": ["styles/*"],
-      "@/types/*": ["types/*"],
-      "@/utils/*": ["utils/*"]
+      "@/types/*": ["types/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

@@ -17,7 +17,7 @@ import Button from "@/components/Button";
 
 import { Success as SuccessProps } from "@/types/interfaces/success.interface";
 
-import { fetchLineItems } from "@/utils/fetchLineItems";
+import { fetchLineItems } from "@/lib/utils/fetchLineItems";
 
 export default function Success({ products }: SuccessProps) {
   const router = useRouter();

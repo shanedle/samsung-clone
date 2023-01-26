@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 
 import Button from "@/components/Button";
 
-import { addToCart } from "@/store/cartSlice";
+import { addToCart } from "@/store/cart";
 
 import { urlFor } from "@/lib/sanity";
 

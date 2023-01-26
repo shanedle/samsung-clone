@@ -7,7 +7,7 @@ import { XIcon } from "@heroicons/react/outline";
 
 import { CheckoutProduct as CheckoutProductProps } from "@/types/interfaces/checkoutproduct.interface";
 
-import { removeFromCart } from "@/store/cartSlice";
+import { removeFromCart } from "@/store/cart";
 
 import { urlFor } from "@/lib/sanity";
 

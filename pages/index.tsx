@@ -10,8 +10,8 @@ import ScrollToTop from "@/components/ScrollToTop";
 
 import { Home as HomeProps } from "@/types/interfaces/home.interface";
 
-import { fetchCategories } from "@/utils/fetchCategories";
-import { fetchProducts } from "@/utils/fetchProducts";
+import { fetchCategories } from "@/lib/utils/fetchCategories";
+import { fetchProducts } from "@/lib/utils/fetchProducts";
 
 export default function Home({ categories, products }: HomeProps) {
   const showProducts = (category: number) => {

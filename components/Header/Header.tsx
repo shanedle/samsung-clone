@@ -10,7 +10,7 @@ import {
 import { Menu, Transition } from "@headlessui/react";
 import { useSelector } from "react-redux";
 
-import { selectCartItems } from "@/store/cartSlice";
+import { selectCartItems } from "@/store/cart";
 
 export default function Header() {
   const { data: session } = useSession();
