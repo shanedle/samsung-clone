@@ -1,6 +1,6 @@
 # Samsung Clone
-A stunning and fully responsive clone of Samsung's official website, built with Next.js, Sanity, Stripe, and Tailwind CSS.
-
+ This project is a Samsung clone built using Next.js, Sanity, and TailwindCSS. It is a responsive and modern web application that mimics the appearance and functionality of Samsung's official website.
+ 
 ## Features
 - A visually appealing and intuitive user interface built with Tailwind CSS.
 - A headless CMS powered by Sanity for easy and efficient content management.
